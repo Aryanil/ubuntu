@@ -20,14 +20,14 @@ jobs:
           mvn -B package --file pom.xml
 
 # Assuming this is a separate workflow file
-name: Spring Boot CI/CD Pipeline
+#name: Spring Boot CI/CD Pipeline
 
-on:
-  push:
-    branches: [ "master", "develop" ]
-  pull_request:
-    branches: [ "master" ]
+#on:
+ # push:
+  #  branches: [ "master", "develop" ]
+  #pull_request:
+   # branches: [ "master" ]
 
-jobs:
-  build:
-    uses: ./.github/workflows/maven-reusable.yml
+#jobs:
+ # build:
+   # uses: ./.github/workflows/maven-reusable.yml
